@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-\src\component\Login\firebase.config.js
+/firebase.config.js
 
 # production
 /build

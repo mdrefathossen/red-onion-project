@@ -20,7 +20,7 @@ const FoodDelivery = () => {
                          <img src={delivery1} className="delivery-img  my-md-3 ml-md-4" alt="" />
                          <div className="delivery-address p-2">
                             <h6>Your Location</h6>
-                            <p className="text-muted">Mirjapur Birol Dinajpur</p>
+                            <p className="text-muted">Sodor Dinajpur</p>
                             <h6>Shop Address</h6>
                             <p className="text-muted">Lilir Mor</p>
                         </div>

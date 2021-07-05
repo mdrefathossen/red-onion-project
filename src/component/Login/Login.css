@@ -1,0 +1,17 @@
+.login-container{
+    display:flex;
+    justify-content: center;
+}
+.login{
+    /* width: 380px; */
+    margin: 0 152px;
+    text-align: center;
+}
+.login .image{
+    height: 90px;
+    width: 200px;
+    margin: auto;
+}
+.error{
+    color: red;
+}

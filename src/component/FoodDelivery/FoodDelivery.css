@@ -1,0 +1,21 @@
+  
+.delivery-place{
+    background-color: #dcdcdc;
+    border-radius: 10px;
+}
+.delivery-img{
+    height: 100px;
+    width: 100px;
+}
+.delivery-address{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.delivery-image{
+    height: 50px;
+    width: 50px;
+}
+.oder-person{
+    background-color: #fff;
+    border-radius: 10px;
+}

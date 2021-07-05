@@ -1,0 +1,8 @@
+.order-container{
+    width: 445px;
+    background-color: #dcdcdc;
+}
+.order-container .order-image img{
+    height: 75px;
+    width: 75px;
+}

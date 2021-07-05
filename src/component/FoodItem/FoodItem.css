@@ -1,0 +1,12 @@
+.img{
+    height: 210px;
+    width: 210px;
+}
+.cart-container {
+    border: none;
+    transition: all 0.5s cubic-bezier(0.5 , 0.8 , 0.7 , 1);
+}
+.cart-container:hover{
+    border: none;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+}

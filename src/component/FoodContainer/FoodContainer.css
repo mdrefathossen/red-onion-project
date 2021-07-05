@@ -1,0 +1,11 @@
+.food-container .nav-container .active::after{
+    content: "";
+    width: 100%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: rgba(202, 64, 64, 0.746);
+    display: block;
+}
+ .active{
+    color:red;
+}

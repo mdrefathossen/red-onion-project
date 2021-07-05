@@ -1,0 +1,8 @@
+.banner{
+    background-image: url('../../images/bannerbackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 55vh;
+    margin: auto;
+}

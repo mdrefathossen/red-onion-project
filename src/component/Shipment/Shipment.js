@@ -13,9 +13,12 @@ const Shipment = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [cart,setCart] = useState([]);
 
-    const onSubmit = data => console.log(data);
+    // const onSubmit = data => console.log(data);
+    const onSubmit = (data) => {
+        // console.log()
+    }
   
-    console.log(watch("example")); // watch input value by passing the name of it
+     // watch input value by passing the name of it
     useEffect(() => {
         const saveCart = getDatabaseCart();
         const foodkey = Object.keys(saveCart);
@@ -25,7 +28,7 @@ const Shipment = () => {
             return food
         })
         setCart(foodItem);
-        console.log(foodItem)
+         
     },[]);
     const removeFood = (foodKey) => {
         const newCart = cart.filter(fd => fd.key !== foodKey);

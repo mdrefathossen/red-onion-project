@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 
-import './Login.css'
  
 import './Login.css';
 import { UserContex } from '../../App';
@@ -44,7 +43,7 @@ const Login = () => {
    
     
     const handalChange = (e) => {
-      console.log(e.target.name,e.target.value)
+      // console.log(e.target.name,e.target.value)
       let isFieldValid = true;
       if(e.target.name ===  'email'){
         isFieldValid = /\S+@\S+\.\S+/.test(e.target.value);
@@ -94,28 +93,26 @@ const Login = () => {
         <div className="login">
         {
            user.isSignedIn ? <button onClick={signOut} >Sign Out</button> :
-            <button onClick={googleSingIn}>Sign In</button>
+            <button className="btn-danger" onClick={googleSingIn}>Sign In With Google</button>
 
-        };
-        <button>Sign  Using Facebook</button>
+        }
+        
          {
              user.isSignedIn && <p>Welcome to {user.name}</p>
          }
-         <h2>Oure Own Authentication</h2>
-         <p>User Name:{user.name} </p>
-         <p>User Email: {user.email}</p>
-         <p>User Password: {user.password} </p>
-         <form onSubmit={handalSubmit}>
+         <h2>Our Own Authentication</h2>
+          
+         <form className="input-form" onSubmit={handalSubmit}>
              <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
              <label htmlFor="newUser">New User Sign Up</label>
              <br />
-          { newUser && <input name="name" onBlur={handalChange} type="text" placeholder="Enter Your Name" />}
+          { newUser && <input className="input-field" name="name" onBlur={handalChange} type="text" placeholder="Enter Your Name" />}
           <br/>
-         <input type="text" name="email" onBlur={handalChange} placeholder="Enter Your Email" required />
+         <input type="text" className="input-field" name="email" onBlur={handalChange} placeholder="Enter Your Email" required />
          <br />
-         <input type="password" onBlur={handalChange} name="password" id="" placeholder="Enter your Password" required />
+         <input type="password" className="input-field" onBlur={handalChange} name="password" id="" placeholder="Enter your Password" required />
          <br/>
-         <input type="submit" value={ newUser ? "Sign Up" : "Sign In"}  />
+         <input type="submit" className="input-field" value={ newUser ? "Sign Up" : "Sign In"}  />
          </form>
          <p style={{color:'red'}}>{user.error} </p>
          { user.success &&  <p style={{color:'green'}}> User {newUser ? 'Create' : 'Logged in'} Successfully </p>  

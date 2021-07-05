@@ -24,7 +24,7 @@ export const UserContex = createContext();
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
   const [cart,setCart] = useState([]);
-  console.log(cart.length)
+  
 
    useEffect(() => {
      const saveCart = getDatabaseCart;
@@ -75,7 +75,7 @@ function App() {
     
     
   }
-  console.log(cart.name)
+  
  
  
 

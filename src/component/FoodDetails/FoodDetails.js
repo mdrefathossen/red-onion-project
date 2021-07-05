@@ -11,7 +11,7 @@ const FoodDetails = (props) => {
     const handalShipment = () => {
         history.push('/shipment');
     }
-    console.log(props.food)
+    
     const [quantity, setQuantity] =useState(1);
     const handleQuantity = (sign) => {
         const currentQuantity = quantity;

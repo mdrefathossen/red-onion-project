@@ -22,8 +22,8 @@ export  const handalGoogleSingIn = () => {
         // console.log(displayName,photoURL,email)
     })
     .catch(err => {
-        console.log(err);
-        console.log(err.message)
+        // console.log(err);
+        // console.log(err.message)
     })
  }
  export const handalSignOut = () => {
@@ -94,6 +94,6 @@ export const signInWtihEmailAndPassword = (email,password) => {
         }).catch((error) => {
         // An error occurred
         // ...
-        console.log(error)
+        // console.log(error)
         });  
 }
